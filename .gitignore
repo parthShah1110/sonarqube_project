@@ -33,7 +33,7 @@ local.properties
 .cxx/
 *.keystore
 !debug.keystore
-
+.scannerwork/**
 # node.js
 #
 node_modules/
