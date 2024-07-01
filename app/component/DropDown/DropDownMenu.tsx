@@ -55,6 +55,28 @@ const DropDownMenu: FC<Props> = ({
     }
   };
 
+  var ab = 10
+  var cd = 20
+
+  console.log('onPress', data)
+
+
+  const onPress = () => {
+    if(ab == cd) {
+      console.log('ab === cd')
+    }
+    console.log('onPress', data)
+
+    const expression = false
+
+    if (expression) {
+      return true;
+    } else {
+      return false;
+    }
+    
+  }
+
   return (
     <View style={styles.filterContainer}>
       <LinearGradient
@@ -66,7 +88,7 @@ const DropDownMenu: FC<Props> = ({
           style={[styles.filterComponent, containerStyle]}
           onPress={onDropDownPress}>
           <Text style={[styles.filterTextColor, titleStyle]}>
-            {selec
+            {selec}
           </Text>
           <Image
             source={Icons.back}
